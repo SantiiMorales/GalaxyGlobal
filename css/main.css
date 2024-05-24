@@ -1,0 +1,399 @@
+@font-face{
+	font-family: 'personal';
+	src: url(/Fuentes/Mollen-Personal-Use-Regular.otf);
+}
+@font-face{
+	font-family: 'Samsung';
+	src: url(/Fuentes/samsungsharpsans-bold.woff);
+}
+@font-face{
+	font-family: 'Inter';
+	src: url(/Fuentes/Inter-SemiBold.ttf);
+}
+
+
+
+body{
+	scroll-behavior: smooth;
+    margin: 0;
+	color:#000 ;
+}
+
+.logo{
+    width: 55px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+}
+
+header{
+	scroll-behavior: smooth;
+    width: 80%;
+    background-color: black;
+    border-bottom: 3px groove #8C2DC6;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: bold;
+}
+
+.flotador-izquierdo{
+    float: left;
+	position: relative;
+	z-index: 1;
+	font-family: 'personal';
+}
+
+.flotador-derecho{
+    float: right;
+	position: relative;
+	z-index: 1;
+}
+
+.TituloImg{
+	position: relative;
+	text-align: center;
+	color: white;
+	clip-path: polygon(0 0, 100% 0, 100% 74%, 0 84%);
+	
+}
+.Titulo{
+	position: absolute;
+	margin: auto;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	font-size: 32px;
+	font-weight: bold;
+	color: #000;
+	font-family: 'Samsung';
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
+nav li{
+    padding: 21px 20px 21px;
+	border-radius: 10px;
+	&:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-bottom: 2px solid  #8C2DC6;
+        transform: scaleY(2);
+        opacity: 0;
+        transition: .5s;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:  #8C2DC6;
+        transform: scale(0);
+        opacity: 0;
+        transition: .3s;
+        z-index: -1;
+      }
+      &:hover {
+        color: #fff;
+        &:before {
+          transform: scaleY(1);
+          opacity: 1;
+        }
+        &:after {
+          transform: scaleY(1);
+          opacity: 1;
+        }
+	}
+}
+
+
+
+.titulo-seccion{
+	width: 100%;
+	padding-top: -60%;
+	text-align: center;
+	font-family: 'Samsung';
+	
+} 
+.seccion-noticias{
+	width: 80%;
+	padding: 2% 10%;
+	font-family: 'Inter';
+}
+.imagen-noticia{
+	width:100%;
+	height: 180px;
+	background-size: cover;
+	border-radius: 10px 10px 0px 0px;
+}
+.noticia-individual{
+	width: 30%;
+	height: 530px;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: 10px;
+	text-align: justify;
+	padding-bottom: 1%;
+	float: left;
+}
+.titulo-noticia{
+	padding: 1% 5%;
+}
+.resumen-noticia{
+	padding: 1% 5%;
+}
+.boton-noticia{
+	background-color: black;
+	padding: 2% 0;
+	margin: 0 5%;
+	text-decoration: none;
+	color: white;
+	display: block;
+	text-align: center;
+	border-radius: 10px;
+	border: 3px solid #8C2DC6;
+}
+
+.boton-noticia:hover{
+	border: 3px solid white;
+	color: white;
+	background-color:#8C2DC6;
+	transition: 0.5s;
+}
+.romper-float{
+    padding-top: 5%;
+	clear: both;
+	display: flex;
+}
+.BotonPlanetas{
+	background-color: #000;
+	color:#FFFFFF;
+	overflow: hidden;
+	position: relative ;
+	text-decoration: none;
+	padding: 30px 60px;
+	border-radius: 30px;
+	border: 3px solid  #8C2DC6;
+	margin: 10px;
+	cursor: pointer;
+	font-family: 'Inter';
+	font-size: 25px;
+}
+.BotonPlanetas:hover{
+	background-color:  #8C2DC6;
+	transform: scale(1.125);
+	transition: 0.7s;
+}
+.ExoPlanetas{
+	background-color: #000;
+	color:#FFFFFF;
+	overflow: hidden;
+	position: relative ;
+	text-decoration: none;
+	padding: 30px 60px;
+	border-radius: 30px;
+	border: 3px solid  #8C2DC6;
+	margin: 10px;
+	cursor: pointer;
+	font-family: 'Inter';
+	font-size: 25px;
+}
+.ExoPlanetas:hover{
+	background-color:  #8C2DC6;
+	transform: scale(1.125);
+	transition: 0.7s;
+}
+.Estrellas{
+	background-color: #000;
+	color:#FFFFFF;
+	overflow: hidden;
+	position: relative ;
+	text-decoration: none;
+	padding: 30px 60px;
+	border-radius: 30px;
+	border: 3px solid  #8C2DC6;
+	margin: 10px;
+	cursor: pointer;
+	font-family: 'Inter';
+	font-size: 25px;
+}
+.Estrellas:hover{
+	background-color:  #8C2DC6;
+	transform: scale(1.125);
+	transition: 0.7s;
+}
+.contenedor-contacto{
+	width: 100%;
+	height: 550px;
+	background: url(/img/banner_contacto.jpg);
+	background-size: cover;
+	font-family: 'personal';
+}
+.form{
+	width: 30%;
+	float: left;
+	margin-top: 20px;
+	margin-left: 5%;
+}
+
+
+.contenedor-contacto{
+	width: 100%;
+	height: 100vh;
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.form-content{
+	width: 100%;
+	max-width: 450px;
+	background-color: #000;
+	padding: 50px 60px 70px ;
+	text-align: center;
+	border-radius: 25px;
+}
+.form-content h1{
+	font-size: 30px;
+	margin-bottom: 60px;
+	color: #FFFFFF;
+	position: relative; 
+}
+.form-content h1::after{
+	content: '';
+	width: 30px;
+	height: 4px;
+	border-radius: 3px;
+	background-color: #510083;
+	position: absolute;
+	bottom: -12px;
+	left: 50%;
+	transform: translate(-50%);
+}
+.input-field{
+	background-color: #222;
+	margin: 15px 0;
+	border-radius:  3px;
+	display: flex;
+	align-items: center;
+	transition: max-height 0.5s;
+	overflow: hidden;
+}
+input{
+	width: 100%;
+	background: transparent;
+	border: 0;
+	outline: none;
+	padding: 18px 15px;
+	color: #FFFFFF;
+}
+.input::placeholder{
+	color: #FFFFFF;
+
+}
+.input-field i {
+	margin-left: 15px;
+	color: #510083;
+}
+.form p{
+	color: #FFFFFF;
+	text-align: left;
+	font-size: 13px;
+
+}
+.btn-field{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 10px 0 0 0;
+	margin: 5px 0 0 0;
+	z-index: -100;
+}
+.btn-field button{
+	flex-basis: 48%;
+	font-size: 15px;
+	background-color: #000;
+	color: #FFFFFF;
+	height: 40px;
+	border-radius: 10px;
+	border: 3px solid #8C2DC6;
+	outline: 0;
+	cursor: pointer;
+	transition: background 1s;
+	font-family: 'Inter';
+}
+.btn-field button:hover{
+	background-color:  #8C2DC6;
+	transform: scale(1.125);
+	transition: 0.7s;
+}
+.input-group{
+	height: 250px;
+}
+
+
+
+textarea{
+	min-width: 94%;
+	max-width: 94%;
+	max-height: 40px;
+	min-height: 20px;
+	font-family: 'personal';
+}
+
+
+
+.logo-pie { 
+	width: 140px;
+}
+figure{
+	display: flex;
+	justify-content: center;
+}
+
+.contenedor-pie-pagina{
+	width: 100%;
+	display: grid;
+	grid-template-columns:repeat(3, 1fr); 
+	background-color: #CDCDCD;
+	font-family: 'Inter';
+}
+
+.pie{
+	width: 89%;
+	padding: 5% 5%;
+}
+
+.pie a { 
+	text-decoration: none;
+}
+
+.redes-sociales { 
+	width: 17px;
+	height: 17px;
+	border: solid 1px #000;
+	padding: 10px;
+	border-radius: 30px;
+}
+
+
+.pie-pagina-copyright{
+	background-color: #510083;
+	padding: 10px 10px;
+	text-align: center;
+	color: white;
+	font-family: 'Inter';
+}
