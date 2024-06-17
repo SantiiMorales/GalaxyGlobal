@@ -21,3 +21,12 @@ sr.reveal('.contenedor-contacto', {
     distance:'-80px',
     delay: 800
 })
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
