@@ -21,7 +21,12 @@ sr.reveal('.contenedor-contacto', {
     distance:'-80px',
     delay: 800
 })
-
+sr.reveal('.seccion-planetas', {
+  duration: 5000,
+  origin: 'left',
+  distance:'-400px',
+  delay: 1000
+})
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {

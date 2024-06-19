@@ -43,7 +43,7 @@ header{
 
 .flotador-izquierdo{
     float: left;
-	position: relative;
+	position: fixed;
 	z-index: 1;
 	font-family: 'personal';
 	display: flex;
@@ -152,7 +152,7 @@ header{
 .boton-noticia{
 	background-color: black;
 	padding: 2% 0;
-	margin: 0 5%;
+	margin: 6% 5%;
 	text-decoration: none;
 	color: white;
 	display: block;
@@ -172,7 +172,7 @@ header{
 	clear: both;
 	display: flex;
 }
-.BotonPlanetas{
+.Boton{
 	background-color: #000;
 	color:#FFFFFF;
 	overflow: hidden;
@@ -186,49 +186,17 @@ header{
 	font-family: 'Inter';
 	font-size: 25px;
 }
-.BotonPlanetas:hover{
+.Boton:hover{
 	background-color:  #8C2DC6;
 	transform: scale(1.125);
 	transition: 0.7s;
 }
-.ExoPlanetas{
-	background-color: #000;
-	color:#FFFFFF;
-	overflow: hidden;
-	position: relative ;
+
+a{
 	text-decoration: none;
-	padding: 30px 60px;
-	border-radius: 30px;
-	border: 3px solid  #8C2DC6;
-	margin: 10px;
-	cursor: pointer;
-	font-family: 'Inter';
-	font-size: 25px;
 }
-.ExoPlanetas:hover{
-	background-color:  #8C2DC6;
-	transform: scale(1.125);
-	transition: 0.7s;
-}
-.Estrellas{
-	background-color: #000;
-	color:#FFFFFF;
-	overflow: hidden;
-	position: relative ;
-	text-decoration: none;
-	padding: 30px 60px;
-	border-radius: 30px;
-	border: 3px solid  #8C2DC6;
-	margin: 10px;
-	cursor: pointer;
-	font-family: 'Inter';
-	font-size: 25px;
-}
-.Estrellas:hover{
-	background-color:  #8C2DC6;
-	transform: scale(1.125);
-	transition: 0.7s;
-}
+
+
 .contenedor-contacto{
 	width: 100%;
 	height: 550px;
