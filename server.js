@@ -21,8 +21,8 @@ app.use('/img', express.static(path.join(__dirname, 'img')));
 app.use("/noticias", express.static(path.join(__dirname, "noticias")));
 app.use("/archivos", express.static(path.join(__dirname, "archivos")));
 app.use("/estrellas", express.static(path.join(__dirname, "estrellas")));
-app.use("/planetas", express.static(path.join(__dirname, "planetas")));
-app.use("/fuentes", express.static(path.join(__dirname, "fuentes")));
+app.use(express.static(path.join(__dirname, "planetas")));
+app.use(express.static(path.join(__dirname, "fuentes")));
 //Ruta planetas
 // app.get('/planetas', (req, res) => {
 //   res.sendFile(path.join(__dirname, './Planetas.html'));
