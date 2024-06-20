@@ -17,10 +17,10 @@ app.use(express.static(__dirname));
 app.use(express.static(path.join(__dirname,'public' ,'css')));
 app.use(express.static(path.join(__dirname, 'public',"js")));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/img', express.static(path.join(__dirname, 'img')));
-app.use("/noticias", express.static(path.join(__dirname, "noticias")));
-app.use("/archivos", express.static(path.join(__dirname, "archivos")));
-app.use("/estrellas", express.static(path.join(__dirname, "estrellas")));
+app.use(express.static(path.join(__dirname, 'img')));
+app.use(express.static(path.join(__dirname, "noticias")));
+app.use(express.static(path.join(__dirname, "archivos")));
+app.use(express.static(path.join(__dirname, "estrellas")));
 app.use(express.static(path.join(__dirname, "planetas")));
 app.use(express.static(path.join(__dirname, "fuentes")));
 //Ruta planetas
