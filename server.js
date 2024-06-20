@@ -14,14 +14,15 @@ app.use(cors());
 
 //aplicar css
 app.use(express.static(__dirname));
-app.use("/css", express.static(path.join(__dirname, 'css')));
-app.use("Js", express.static(path.join(__dirname, "Js")));
-app.use('/Img', express.static(path.join(__dirname, 'img')));
-app.use("/Noticias", express.static(path.join(__dirname, "noticias")));
-app.use("/Archivos", express.static(path.join(__dirname, "Archivos")));
-app.use("/Estrellas", express.static(path.join(__dirname, "Estrellas")));
-app.use("/Planetas", express.static(path.join(__dirname, "Planetas")));
-app.use("/Fuentes", express.static(path.join(__dirname, "Fuentes")));
+// app.use("/css", express.static(path.join(__dirname, 'css')));
+// app.use("Js", express.static(path.join(__dirname, "Js")));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/img', express.static(path.join(__dirname, 'img')));
+app.use("/noticias", express.static(path.join(__dirname, "noticias")));
+app.use("/archivos", express.static(path.join(__dirname, "archivos")));
+app.use("/estrellas", express.static(path.join(__dirname, "estrellas")));
+app.use("/planetas", express.static(path.join(__dirname, "planetas")));
+app.use("/fuentes", express.static(path.join(__dirname, "fuentes")));
 //Ruta planetas
 // app.get('/planetas', (req, res) => {
 //   res.sendFile(path.join(__dirname, './Planetas.html'));
@@ -33,7 +34,7 @@ app.use("/Fuentes", express.static(path.join(__dirname, "Fuentes")));
 
 // Ruta para servir el archivo HTML principal
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, './main.html'));
+  res.sendFile(path.join(__dirname, 'public', 'main.html'));
 });
 
 
