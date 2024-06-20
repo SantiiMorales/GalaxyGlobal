@@ -1,6 +1,6 @@
 {
   "name": "galaxy-global",
-  "main": "./Js/server.js",
+  "main": "./server.js",
   "description": "Galaxy Global",
   "version": "1.1.1",
   "scripts": {
