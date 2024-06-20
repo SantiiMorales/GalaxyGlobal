@@ -57,6 +57,7 @@ header{
 	width: 100%;
 }
 
+
 .Titulo{
 	position: absolute;
 	top: 50%;
@@ -71,13 +72,11 @@ header{
 	text-align: center;
 	justify-content: center;
 }
-
 .img-principal{
-	position: absolute;
-    top: 0;
-    height: auto;
+	height: auto;
 	width: 100%;
 }
+
 
 
 .topnav a {
@@ -297,12 +296,19 @@ figure{
 		align-items: center;
 		height: 40vh;
 	}
+	.img-principal{
+		position: absolute;
+		top: 16px;
+		height: auto;
+		width: 100%;
+	}
+	
 	.Titulo {
 		font-size: 21px; /* Tamaño de fuente ajustado */
 		padding: 0; /* Padding ajustado */
 		width: 100%;
 		max-width: 480px;
-		
+		clip-path: polygon(0 0, 100% 0, 100% 74%, 0 84%);
     }
 	
     .seccion-noticias {

@@ -83,6 +83,12 @@ header{
 	justify-content: center;
 }
 
+.img-principal{
+	height: auto;
+	width: 100%;
+}
+
+
 .topnav {
 	background-color: #000000;
 	overflow: hidden;
@@ -116,12 +122,7 @@ header{
   }
 
 
-.img-principal{
-	position: absolute;
-    top: 0;
-    height: auto;
-	width: 100%;
-}
+
 
 
 
@@ -452,7 +453,12 @@ figure{
 		max-width: 480px;
 		
     }
-	
+	.img-principal{
+		position: absolute;
+		top: 16px;
+		height: auto;
+		width: 100%;
+	}
     .seccion-noticias {
         flex-direction: column;
     }
