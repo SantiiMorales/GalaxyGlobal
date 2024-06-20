@@ -14,8 +14,8 @@ app.use(cors());
 
 //aplicar css
 app.use(express.static(__dirname));
-// app.use("/css", express.static(path.join(__dirname, 'css')));
-// app.use("Js", express.static(path.join(__dirname, "Js")));
+app.use(express.static(path.join(__dirname,'public' ,'css')));
+app.use(express.static(path.join(__dirname, 'public',"js")));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/img', express.static(path.join(__dirname, 'img')));
 app.use("/noticias", express.static(path.join(__dirname, "noticias")));
