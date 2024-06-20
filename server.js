@@ -20,15 +20,16 @@ app.use('/Img', express.static(path.join(__dirname, 'img')));
 app.use("/Noticias", express.static(path.join(__dirname, "noticias")));
 app.use("/Archivos", express.static(path.join(__dirname, "Archivos")));
 app.use("/Estrellas", express.static(path.join(__dirname, "Estrellas")));
+app.use("/Planetas", express.static(path.join(__dirname, "Planetas")));
 app.use("/Fuentes", express.static(path.join(__dirname, "Fuentes")));
 //Ruta planetas
-app.get('/planetas', (req, res) => {
-  res.sendFile(path.join(__dirname, './Planetas.html'));
-});
+// app.get('/planetas', (req, res) => {
+//   res.sendFile(path.join(__dirname, './Planetas.html'));
+// });
 
-app.get('/estrellas', (req, res) => {
-  res.sendFile(path.join(__dirname, './Estrellas.html'));
-});
+// app.get('/estrellas', (req, res) => {
+//   res.sendFile(path.join(__dirname, './Estrellas.html'));
+// });
 
 // Ruta para servir el archivo HTML principal
 app.get('/', (req, res) => {
