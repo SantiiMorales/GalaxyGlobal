@@ -75,7 +75,7 @@ header{
 	transform: translate(-50%, -50%);
 	font-size: 3.1em;
 	font-weight: bold;
-	color: #000;
+	color: #fefefeea;
 	font-family: 'Samsung';
 	display: flex;
 	padding: 1% 5%;
@@ -115,6 +115,13 @@ header{
 	display: none;
   }
 
+
+.img-principal{
+	position: absolute;
+    top: 0;
+    height: auto;
+	width: 100%;
+}
 
 
 
