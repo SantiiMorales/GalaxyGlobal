@@ -9,27 +9,27 @@
     "routes": [
         {
             "src": "/archivos/(.*)",
-            "dest": "/archivos/$1"
+            "dest": "/archivos/"
         },
         {
             "src": "/img/(.*)",
-            "dest": "/img/$1"
+            "dest": "/img/"
         },
         {
             "src": "/planetas/(.*)",
-            "dest": "/planetas/$1"
+            "dest": "/planetas/"
         },
         {
             "src": "/estrellas/(.*)",
-            "dest": "/estrellas/$1"
+            "dest": "/estrellas/"
         },
         {
             "src": "/noticias/(.*)",
-            "dest": "/noticias/$1"
+            "dest": "/noticias/"
         },
         {
             "src": "/fuentes/(.*)",
-            "dest": "/fuentes/$1"
+            "dest": "/fuentes/"
         },
         {
             "src": "/(.*)",
