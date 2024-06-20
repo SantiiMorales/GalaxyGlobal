@@ -244,36 +244,61 @@ figure{
 
 /* Para pantallas pequeñas (móviles) */
 @media (max-width: 480px) {
+	header{
+		width: 100%;
+		padding: 0;
+	}
+
     header .flotador-izquierdo, header .flotador-derecho {
         align-items: flex-start;
         text-align: justify;
+		
     }
-
-   
-
+	.topnav  {
+		width: 100%;
+		
+	  }
+	  /*.topnav a {
+		float: left;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		position: static;
+	  }*/
+	.TituloImg{
+		display: flex;		
+		justify-content: center;
+		align-items: center;
+		height: 40vh;
+	}
 	.Titulo {
-		font-size: 1.5em; /* Tamaño de fuente ajustado */
-		padding: 1% 6%; /* Padding ajustado */
+		font-size: 21px; /* Tamaño de fuente ajustado */
+		padding: 0; /* Padding ajustado */
 		width: 100%;
 		max-width: 480px;
+		
     }
 	
-    .seccion-planetas {
+    .seccion-noticias {
         flex-direction: column;
     }
 
-    .planeta-individual {
+    .noticia-individual {
         width: 100%;
         margin-bottom: 10px;
     }
 
     .contenedor-contacto {
-        height: auto; /* Altura automática para adaptarse al contenido */
+        width: auto;
+		height: auto; /* Altura automática para adaptarse al contenido */
         padding: 20px; /* Padding para no tocar los bordes de la pantalla */
     }
 
     .form-content {
-        width: 100%; /* Ancho completo para aprovechar el espacio */
+        width: auto; /* Ancho completo para aprovechar el espacio */
         padding: 40px 20px; /* Padding reducido */
         border-radius: 15px; /* Radio de borde reducido */
     }
@@ -283,9 +308,26 @@ figure{
         margin-bottom: 40px; /* Espacio inferior reducido */
     }
 
-    
-}
+    .input-field {
+        margin: 10px 0; /* Espacio entre campos reducido */
+    }
 
+    .input-group {
+        height: auto; /* Altura automática para adaptarse al contenido */
+    }
+
+    .btn-field button {
+        flex-basis: auto; /* Base flexible para ajustarse al contenedor */
+        width: 100%; /* Ancho completo para aprovechar el espacio */
+        margin-bottom: 10px; /* Espacio inferior para separar del siguiente elemento */
+    }
+	footer > .contenedor-pie-pagina{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
 @media screen and (max-width: 600px) {
 	.topnav a:not(:first-child) {display: none;}
 	.topnav a.icon {

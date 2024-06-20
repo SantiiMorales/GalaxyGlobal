@@ -23,7 +23,7 @@ sr.reveal('.contenedor-contacto', {
 })
 sr.reveal('.seccion-planetas', {
   duration: 2000,
-  origin: 'left',
+  origin: 'top',
   distance:'-400px',
   delay: 1000
 })
