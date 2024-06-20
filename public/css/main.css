@@ -315,6 +315,7 @@ input{
 	justify-content: center;
 	flex-direction: row;
 	align-items: center;
+	gap: 12px;
 }
 
 textarea{
@@ -397,6 +398,11 @@ figure{
     .noticia-individual {
         width: 80%;
         margin-bottom: 20px;
+    }
+	.planeta-individual {
+        width: 80%;
+        margin-bottom: 20px;
+        height: auto;
     }
 }
 

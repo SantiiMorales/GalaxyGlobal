@@ -211,6 +211,15 @@ figure{
 	font-family: 'Inter';
 }
 
+.social-media{
+	margin-top: 12px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	gap: 12px;
+}
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -239,7 +248,16 @@ figure{
     .planeta-individual {
         width: 80%;
         margin-bottom: 20px;
+		height: auto;
     }
+	.seccion-planetas {
+		width: 80%;
+		padding: 10%;
+		font-family: 'Inter';
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 }
 
 /* Para pantallas pequeñas (móviles) */
