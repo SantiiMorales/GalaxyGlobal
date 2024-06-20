@@ -1,16 +1,15 @@
 @font-face{
 	font-family: 'personal';
-	src: url("../../fuentes/Mollen-Personal-Use-Regular.otf");
+	src: url("/src/fuentes/Mollen-Personal-Use-Regular.otf");
 }
 @font-face{
 	font-family: 'Samsung';
-	src: url("../../fuentes/samsungsharpsans-bold.woff");
+	src: url("/src/fuentes/samsungsharpsans-bold.woff");
 }
 @font-face{
 	font-family: 'Inter';
-	src: url("../../fuentes/Inter-SemiBold.ttf");
+	src: url("/src/fuentes/Inter-SemiBold.ttf");
 }
-
 *{
 	padding: 0;
 	margin: 0;
@@ -204,7 +203,7 @@ a{
 .contenedor-contacto{
 	width: 100%;
 	height: 550px;
-	background: url(/img/banner_contacto.jpg);
+	background: url(/src/img/banner_contacto.jpg);
 	background-size: cover;
 	font-family: 'personal';
 }

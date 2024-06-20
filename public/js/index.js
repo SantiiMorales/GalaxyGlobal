@@ -9,7 +9,7 @@ sr.reveal('.titulo-seccion', {
     origin: 'top',
     distance:'-400px'
 })
-sr.reveal('.seccion-noticias', {
+sr.reveal('.seccion-/src/noticias', {
     duration: 2000,
     origin: 'top',
     distance:'-400px',

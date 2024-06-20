@@ -13,24 +13,28 @@ app.use(cors());
 //! PRUEBE ESE EVENTO A VER SI BOTA FIRE
 
 //aplicar css
-app.use(express.static(__dirname));
-app.use(express.static(path.join(__dirname,'public' ,'css')));
-app.use(express.static(path.join(__dirname, 'public',"js")));
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'img')));
-app.use(express.static(path.join(__dirname, "noticias")));
-app.use(express.static(path.join(__dirname, "archivos")));
-app.use(express.static(path.join(__dirname, "estrellas")));
-app.use(express.static(path.join(__dirname, "planetas")));
-app.use(express.static(path.join(__dirname, "fuentes")));
-//Ruta planetas
-// app.get('/planetas', (req, res) => {
-//   res.sendFile(path.join(__dirname, './Planetas.html'));
-// });
+//app.use(express.static(__dirname));
+// app.use(express.static(path.join(__dirname,'public' ,'css')));
+// app.use(express.static(path.join(__dirname, 'public',"js")));
 
-// app.get('/estrellas', (req, res) => {
-//   res.sendFile(path.join(__dirname, './Estrellas.html'));
-// });
+app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'img')));
+// app.use(express.static(path.join(__dirname, "./src/noticias")));
+// app.use(express.static(path.join(__dirname, "archivos")));
+// app.use(express.static(path.join(__dirname, "estrellas")));
+// app.use(express.static(path.join(__dirname, "planetas")));
+// app.use(express.static(path.join(__dirname, "fuentes")));
+app.use('/src', express.static(path.join(__dirname, 'src')));
+app.use(express.static(path.join(__dirname)));
+
+//Ruta planetas
+app.get('/planetas', (req, res) => {
+  res.sendFile(path.join(__dirname,'public' ,'./planetas.html'));
+});
+
+app.get('/estrellas', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public','./estrellas.html'));
+});
 
 // Ruta para servir el archivo HTML principal
 app.get('/', (req, res) => {
