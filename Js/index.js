@@ -11,7 +11,7 @@ sr.reveal('.titulo-seccion', {
 })
 sr.reveal('.seccion-noticias', {
     duration: 5000,
-    origin: 'left',
+    origin: 'top',
     distance:'-400px',
     delay: 1000
 })

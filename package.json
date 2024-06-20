@@ -1,0 +1,19 @@
+{
+  "name": "galaxy-global",
+  "main": "./Js/server.js",
+  "description": "Galaxy Global",
+  "version": "1.1.1",
+  "scripts": {
+    "start": "node ./Js/server.js",
+    "dev": "nodemon ./Js/server.js"
+  },
+  "author": "Santiago Morales",
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.14"
+  }
+}

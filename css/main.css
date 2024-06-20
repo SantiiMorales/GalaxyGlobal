@@ -22,6 +22,10 @@ body{
 	color:#000 ;
 }
 
+h3{
+	text-align:center;
+}
+
 .logo{
     width: 55px;
 	position: absolute;
@@ -306,7 +310,13 @@ input{
 	height: 250px;
 }
 
-
+.social-media{
+	margin-top: 12px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+}
 
 textarea{
 	min-width: 94%;
@@ -393,18 +403,42 @@ figure{
 
 /* Para pantallas pequeñas (móviles) */
 @media (max-width: 480px) {
+	header{
+		width: 100%;
+		padding: 0;
+	}
+
     header .flotador-izquierdo, header .flotador-derecho {
         align-items: flex-start;
         text-align: justify;
+		
     }
-
-   
-
+	.topnav  {
+		width: 100%;
+		
+	  }
+	  /*.topnav a {
+		float: left;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		position: static;
+	  }*/
+	.TituloImg{
+		display: flex;		
+		justify-content: center;
+		align-items: center;
+		height: 40vh;
+	}
 	.Titulo {
-		font-size: 1.5em; /* Tamaño de fuente ajustado */
-		padding: 1% 6%; /* Padding ajustado */
+		font-size: 21px; /* Tamaño de fuente ajustado */
+		padding: 0; /* Padding ajustado */
 		width: 100%;
 		max-width: 480px;
+		
     }
 	
     .seccion-noticias {
@@ -417,12 +451,13 @@ figure{
     }
 
     .contenedor-contacto {
-        height: auto; /* Altura automática para adaptarse al contenido */
+        width: auto;
+		height: auto; /* Altura automática para adaptarse al contenido */
         padding: 20px; /* Padding para no tocar los bordes de la pantalla */
     }
 
     .form-content {
-        width: 100%; /* Ancho completo para aprovechar el espacio */
+        width: auto; /* Ancho completo para aprovechar el espacio */
         padding: 40px 20px; /* Padding reducido */
         border-radius: 15px; /* Radio de borde reducido */
     }
@@ -445,7 +480,13 @@ figure{
         width: 100%; /* Ancho completo para aprovechar el espacio */
         margin-bottom: 10px; /* Espacio inferior para separar del siguiente elemento */
     }
-}
+	footer > .contenedor-pie-pagina{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	
 
 @media screen and (max-width: 600px) {
 	.topnav a:not(:first-child) {display: none;}
@@ -469,3 +510,4 @@ figure{
 	  text-align: left;
 	}
   }
+}

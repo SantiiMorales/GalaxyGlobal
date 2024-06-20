@@ -89,26 +89,22 @@
     <div class="contenedor-contacto" id="contacto">
 		
 		<div class="form-content">
-			<h1 class="nombre-formulario">Contáctanos</h1>
+			<h1 class="nombre-formulario">Deja un comentario</h1>
 
-            <form>
+            <form action="/send-email" method="post">
 				<div class="input-group">
 
-					<div class="input-field" id="NameInput">
-						<i class="fa-solid fa-user"></i>
-						<input type="text" class="entrada-formulario" placeholder="Usuario"></input>
-					</div>
 				    <div class="input-field">
                         <i class="fa-solid fa-envelope"></i>
-						<input type="email" class="entrada-formulario" placeholder="Email"></input>
+						<input type="email" class="entrada-formulario" name="email" placeholder="Email" required></input>
 					</div>	
 					<div class="input-field">
                         <i class="fa-solid fa-book"></i>
-						<input type="text" class="entrada-formulario" placeholder="Asunto"></input>
+						<input type="text" class="entrada-formulario" name="subject" placeholder="Asunto" required></input>
 					</div>	
 					<div class="input-field">
                         <i class="fa-solid fa-comment"></i>
-						<input type="text" class="entrada-formulario" placeholder="Mensaje"></input>
+						<input type="text" class="entrada-formulario" name="message" placeholder="Mensaje" required></input>
 					</div>	
 				
 				</div>
@@ -123,7 +119,7 @@
 		<div class="contenedor-pie-pagina">	
 			<div class="pie">
 				<h3>La Administración Nacional de Aeronáutica y del Espacio</h3>
-				<p>Explora el universo y descubre nuestro planeta de origen</p>
+				<p style="text-align: center;">Explora el universo y descubre nuestro planeta de origen</p>
 			</div>
 			<div class="pie">
 				<figure>	
@@ -133,7 +129,8 @@
 				</figure>
 			</div>
 			<div class="pie">
-				<h3>Síguenos en Redes Sociales:</h3>
+				<h3 >Síguenos en Redes Sociales:</h3>
+				<div class="social-media">
 					<a href="https://www.instagram.com/NASA/" target="_blank" rel="noopener">
 						<img src="./Archivos/instagram.svg" class="redes-sociales">
 					</a>
@@ -146,7 +143,7 @@
 					<a href="https://www.youtube.com/nasa" target="_blank"rel="noopener">
 						<img src="./Archivos/youtube.svg" class="redes-sociales">
 					</a>
-				
+				</div>
 			</div>
 		</div>
 		<div class="pie-pagina-copyright">
